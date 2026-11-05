@@ -8,15 +8,11 @@ body{
     margin:0px;
     padding:0px;
     background-color: #09063D;
-    height: 100vh;
-    width: 100vw;
     box-sizing: border-box;
 }
 
 main{
     margin: auto;
-    width: 100%;
-    padding: 2%;
     box-sizing: border-box;
 }
 
@@ -50,16 +46,6 @@ nav ul{
 /*-------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------*/
 
 footer{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     border-top: thin solid #29239C;
-}
-
-footer > section{
-    width: 30%;
-    height: 100%;
 }
 
