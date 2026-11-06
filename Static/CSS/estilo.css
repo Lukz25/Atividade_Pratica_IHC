@@ -11,15 +11,29 @@ body{
     box-sizing: border-box;
 }
 
-main{
-    margin: auto;
-    box-sizing: border-box;
-}
-
 a{
     text-decoration: none;
 }
 
+p{
+    font-size: 14px;
+}
+
+.intro{
+    font-family:JetBrains Mono;
+    font-size: 12px;
+}
+
+.div{
+    
+    background: rgba(41, 35, 156, 0.63);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #CBC9EE;
+    height: 100%;
+}
 /*-------------------------------------------------------------------------- HEADER ------------------------------------------------------------------*/
 
 header{
@@ -39,8 +53,12 @@ nav ul{
     background: #2A7B9B;
     background: linear-gradient(90deg,rgba(42, 123, 155, 1) 26%, rgba(21, 73, 205, 1) 49%, rgba(41, 35, 156, 1) 69%, rgba(18, 14, 82, 1) 88%);
     border-radius: 22px;
+    height: 75vh;
+}
+
+.container-banner svg{
     width: 100%;
-    height: 55vh;
+    height: 100%;
 }
 
 /*-------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------*/
@@ -49,3 +67,6 @@ footer{
     border-top: thin solid #29239C;
 }
 
+footer section{
+    width: 30%;
+}
