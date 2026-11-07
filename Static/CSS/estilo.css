@@ -57,12 +57,16 @@ button:hover{
 }
 
 .div{  
-    background: rgba(9, 6, 61, 0.8);
+    background: rgba(20, 16, 86, 1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     border: 1px solid #CBC9EE;
+}
+
+.div p{
+    font-size: 15px;
 }
 
 /*-------------------------------------------------------------------------- HEADER ------------------------------------------------------------------*/
@@ -84,6 +88,35 @@ nav ul{
     background: #2A7B9B;
     background: linear-gradient(90deg,rgba(42, 123, 155, 1) 26%, rgba(21, 73, 205, 1) 49%, rgba(41, 35, 156, 1) 69%, rgba(18, 14, 82, 1) 88%);
     border-radius: 22px;
+}
+
+.div-banner{  
+    background: rgba(9, 6, 61, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid #CBC9EE;
+}
+
+/*-------------------------------------------------------------------------- CONTEXTUALIZAÇÂO ------------------------------------------------------------------*/
+
+.variavel{
+    background-color: rgba(203, 201, 238, 0.22);
+    border-radius: 22px;
+}
+
+.lista{
+    color: #09063D;
+    background-color: #E6B04A;
+    border-radius: 50%;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 25px;
+    flex-shrink: 0;
 }
 
 /*-------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------*/
