@@ -23,7 +23,7 @@
     crossorigin="anonymous"></script>
 
 <body class="container-fluid">
-    <header class="navbar navbar-expand-lg navbar-dark">
+    <header class=" container-fluid navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <h2 class="navbar-brand">Pirataria no Cinema</h2>
 
@@ -96,8 +96,10 @@
                 <p class="intro">CONTEXTUALIZAÇÃO</p>
                 <h2>O dataset: MagnetDB</h2>
                 <p>
-                    O MagnetDB é um conjunto de dados longitudinal sobre torrents descobertos na rede BitTorrent DHT entre 2018 e 2024. 
-                    Neste estudo ele foi cruzado com o IMDb (gênero e nota, de 1,0 a 10,0) e com o Box Office Mojo (bilheteria mundial em dólares),
+                    O MagnetDB é um conjunto de dados longitudinal sobre torrents descobertos na rede BitTorrent DHT
+                    entre 2018 e 2024.
+                    Neste estudo ele foi cruzado com o IMDb (gênero e nota, de 1,0 a 10,0) e com o Box Office Mojo
+                    (bilheteria mundial em dólares),
                     pelo título original e pelo ano de lançamento.
                 </p>
             </div>
@@ -105,7 +107,8 @@
             <div class="row d-flex justify-content-between align-items-strech gap-2">
                 <div class="col-12 col-lg-6 div p-3">
                     <h3>Variáveis Usadas</h3>
-                    <p>Cada registro descreve um arquivo de vídeo compartilhado. Estas foram as colunas que sustentam as análises.</p>
+                    <p>Cada registro descreve um arquivo de vídeo compartilhado. Estas foram as colunas que sustentam as
+                        análises.</p>
                     <div class="d-flex justify-content-start align-items-center flex-wrap w-100 gap-2">
                         <p class="intro variavel p-2">TITLE · título da obra</p>
                         <p class="intro variavel p-2">YEAR · ano de lançamento</p>
@@ -143,24 +146,31 @@
                 <h2>O tamanho da base em três números</h2>
             </div>
 
-            <div class="row d-flex align-items-strech flex-wrap mt-3 dados">
-                <div class="div p-3">
-                    <h2 class="destaque">1.562.572</h2>
-                    <h3>registros originais</h3>
-                    <p>Arquivo MagnetDB_2024_video_high_confidence, antes dos filtros.</p>
+            <div class="row flex-wrap mt-4">
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque">1.562.572</h2>
+                        <h3>registros originais</h3>
+                        <p>Arquivo <span class="intro">MagnetDB 2024 video high confidence</span>, antes dos filtros.</p>
+                    </div>
                 </div>
 
-                <div class="div p-3 mx-4">
-                    <h2 class="destaque">100</h2>
-                    <h3>filmes na amostra tratada</h3>
-                    <p>Filmes de grande apelo comercial usados em todos os cruzamentos.</p>
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque">100</h2>
+                        <h3>filmes na amostra tratada</h3>
+                        <p>Filmes de grande apelo comercial usados em todos os cruzamentos.</p>
+                    </div>
                 </div>
 
-                <div class="div p-3">
-                    <h2 class="destaque">2018–2024</h2>
-                    <h3>período de observação</h3>
-                    <p>Sete anos de torrents descobertos na rede DHT.</p>
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque">2018–2024</h2>
+                        <h3>período de observação</h3>
+                        <p>Sete anos de torrents descobertos na rede DHT.</p>
+                    </div>
                 </div>
+                
             </div>
         </section>
 
