@@ -54,19 +54,19 @@ button{
     font-weight: bold;
 }
 
-button:hover, button.active:hover{
+button:hover{
     background-color: rgba(203, 201, 238, 0.7);
     border: solid 1px #09063D;
     color: #09063D;
 }
 
-.destaque-button, button.active{
+.destaque-button{
     background-color:#E6B04A;
     color: #09063D;
     border:none;
 }
 
-.destaque-button:hover, button.active:hover{
+.destaque-button:hover{
     border:none;
 }
 
@@ -141,6 +141,26 @@ nav ul{
 
 /*-------------------------------------------------------------------------- MÉTRICAS ------------------------------------------------------------------*/
 
+.container-grafico{
+
+    width: 100%;
+    height: 25vh;
+}
+
+.container-grafico canvas{
+    width: 100%;
+    height: 100%;
+}
+
+.legenda span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legenda p{
+    margin-bottom: 0;
+}
 
 
 /*-------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------*/

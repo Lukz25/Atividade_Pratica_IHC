@@ -18,10 +18,6 @@
     <title>Pirataria no Cinema</title>
 </head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
 <body class="container-fluid">
     <header class=" container-fluid navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
@@ -195,8 +191,8 @@
             <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap w-100 carousel slide"
                 id="carroussel" data-bs-ride="carousel">
 
-                <div class="d-flex gap-3 align-items-center overflow-auto text-nowrap w-75">
-                    <button class="active" data-bs-target="#carroussel" data-bs-slide-to="0">Notas x
+                <div class="d-flex gap-3 align-items-center text-nowrap w-75">
+                    <button data-bs-target="#carroussel" data-bs-slide-to="0">Notas x
                         Downloads</button>
                     <button data-bs-target="#carroussel" data-bs-slide-to="1">Gêneros</button>
                     <button data-bs-target="#carroussel" data-bs-slide-to="2">Vazamentos</button>
@@ -221,212 +217,227 @@
                     </button>
                 </div>
 
+                <div class="carousel-inner mt-3">
+
+                    <div class="carousel-item active">
+                        <div class="row g-4 align-items-start">
+
+                            <div class="col-12 col-lg-8">
+                                <div class="div p-4">
+                                    <p class="intro">Pergunta 1 - Figura 1</p>
+                                    <h3>Média de downloads por faixa de nota</h3>
+                                    <p>Milhões de downloads - 100 filmes - notas IMDb</p>
+
+                                    <div class="container-grafico">
+                                        <canvas id="grafico1"></canvas>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                                <div class="div p-4">
+                                    <h3>O que mostra</h3>
+                                    <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
+                                        para Boa: +14 mi.</p>
+                                </div>
+
+                                <div class="div p-4">
+                                    <h3>Cuidado</h3>
+                                    <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a
+                                        nota
+                                        causa o aumento.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-start">
+
+                            <div class="col-12 col-lg-8">
+                                <div class="div p-4">
+                                    <p class="intro">Pergunta 2 - Figura 2</p>
+                                    <h3>Média de downloads por gênero</h3>
+                                    <p>Milhões de downloads · cada filme conta em todos os seus gêneros</p>
+
+                                    <div class="container-grafico">
+                                        <canvas id="grafico2"></canvas>
+                                    </div>
+
+                                    <div class="d-flex gap-4 mt-3 align-items-center legenda">
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #E6B04A;"></span>
+                                            <p>Lideram a amostra</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #4b418c;"></span>
+                                            <p>Demais gêneros</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                                <div class="div p-4">
+                                    <h3>O que mostra</h3>
+                                    <p>Ação (36,6 mi) e Ficção Científica (34,8 mi) ficam mais de 11 mi acima de Terror,
+                                        Comédia e Drama.</p>
+                                </div>
+
+                                <div class="div p-4">
+                                    <h3>Como foi calculado</h3>
+                                    <p>Gêneros multivalorados separados, média igual à soma dos downloads dividida pelo
+                                        número de títulos do gênero, e filtro para cinco categorias.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-start">
+
+                            <div class="col-12 col-lg-8">
+                                <div class="div p-4">
+                                    <p class="intro">Pergunta 3 - Figura 3</p>
+                                    <h3>Faturamento semanal relativo à estreia</h3>
+                                    <p>Arrecadação de cada semana como % da 1ª semana, por intervalo até a primeira
+                                        cópia de alta qualidade</p>
+
+                                    <div class="container-grafico">
+                                        <canvas id="grafico3"></canvas>
+                                    </div>
+
+                                    <div class="d-flex gap-4 mt-3 align-items-center legenda">
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #E6B04A;"></span>
+                                            <p>0 a 15 dias</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #4b418c;"></span>
+                                            <p>16 a 45 dias</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #3b729a;"></span>
+                                            <p>Mais de 45 dias</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                                <div class="div p-4">
+                                    <h3>O que mostra</h3>
+
+                                    <div class="d-flex gap-3 my-3 justify-content-center flex-wrap">
+
+                                        <div class="div p-4 text-center flex-fill">
+                                            <h3 class="destaque">35%</h3>
+                                            <p class="text-nowrap">0 a 15 dias</p>
+                                        </div>
+
+
+                                        <div class="div p-4 text-center flex-fill">
+                                            <h3 class="destaque">65%</h3>
+                                            <p class="text-nowrap">16 a 45 dias</p>
+                                        </div>
+
+
+                                        <div class="div p-4 text-center flex-fill">
+                                            <h3 class="destaque">78%</h3>
+                                            <p class="text-nowrap">Mais de 45 dias</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Cai de 100% para 35% na 2ª semana e 15% na 3ª. É o decaimento mais rápido,
+                                        compatível com a troca do ingresso pelo acesso doméstico.</p>
+                                </div>
+
+                                <div class="div p-4">
+                                    <h3>Aviso</h3>
+                                    <p>As curvas são parametrizadas a partir de relatórios de mercado e servem como
+                                        simulação, não como prova causal. O controle só escolhe qual faixa destacar.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-start">
+
+                            <div class="col-12 col-lg-8">
+                                <div class="div p-4">
+                                    <p class="intro">Pergunta 4 - Figura 4</p>
+                                    <h3>Volume mensal de downloads, 2018–2024</h3>
+                                    <p>Cada barra cobre a faixa de valores do mês, em milhões (leitura aproximada)</p>
+
+                                    <div class="container-grafico">
+                                        <canvas id="grafico4"></canvas>
+                                    </div>
+
+                                    <div class="d-flex gap-4 mt-3 align-items-center legenda">
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #E6B04A;"></span>
+                                            <p>Maio a julho, novembro e dezembro</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #4b418c;"></span>
+                                            <p>Demais meses</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="background-color: #3b729a;"></span>
+                                            <p>Tendência, de ~35 a ~58</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                                <div class="div p-4">
+                                    <h3>O que mostra</h3>
+                                    <p>Picos entre maio e julho e de novo em novembro e dezembro. Agosto a outubro ficam
+                                        em patamares mais baixos</p>
+                                </div>
+
+                                <div class="div p-4">
+                                    <h3>Mais de um pico</h3>
+                                    <p>O segundo pico no fim do ano mostra que a sazonalidade não se explica só pelo
+                                        verão do hemisfério norte.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="row g-4 allign-items-start">
-
-                        <div class="col-12 col-lg-8">
-                            <div class="div p-4">
-                                <p class="intro">Pergunta 1 - Figura 1</p>
-                                <h3>Média de downloads por faixa de nota</h3>
-                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
-
-                                <div class="container-grafico">
-
-                                </div>
-
-                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
-                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                    </svg>
-                                    Ver como tabela
-                                </button>
-
-                                <div class="collapse" id="tabela1">
-                                    <div class="container-tabela">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
-                            <div class="div p-4">
-                                <h3>O que mostra</h3>
-                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
-                                    para Boa: +14 mi.</p>
-                            </div>
-
-                            <div class="div p-4">
-                                <h3>Cuidado</h3>
-                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
-                                    causa o aumento.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                   <div class="row g-4 allign-items-start">
-
-                        <div class="col-12 col-lg-8">
-                            <div class="div p-4">
-                                <p class="intro">Pergunta 2 - Figura 2</p>
-                                <h3>Média de downloads por faixa de nota</h3>
-                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
-
-                                <div class="container-grafico">
-
-                                </div>
-
-                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
-                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                    </svg>
-                                    Ver como tabela
-                                </button>
-
-                                <div class="collapse" id="tabela1">
-                                    <div class="container-tabela">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
-                            <div class="div p-4">
-                                <h3>O que mostra</h3>
-                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
-                                    para Boa: +14 mi.</p>
-                            </div>
-
-                            <div class="div p-4">
-                                <h3>Cuidado</h3>
-                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
-                                    causa o aumento.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row g-4 allign-items-start">
-
-                        <div class="col-12 col-lg-8">
-                            <div class="div p-4">
-                                <p class="intro">Pergunta 3 - Figura 3</p>
-                                <h3>Média de downloads por faixa de nota</h3>
-                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
-
-                                <div class="container-grafico">
-
-                                </div>
-
-                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
-                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                    </svg>
-                                    Ver como tabela
-                                </button>
-
-                                <div class="collapse" id="tabela1">
-                                    <div class="container-tabela">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
-                            <div class="div p-4">
-                                <h3>O que mostra</h3>
-                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
-                                    para Boa: +14 mi.</p>
-                            </div>
-
-                            <div class="div p-4">
-                                <h3>Cuidado</h3>
-                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
-                                    causa o aumento.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row g-4 allign-items-start">
-
-                        <div class="col-12 col-lg-8">
-                            <div class="div p-4">
-                                <p class="intro">Pergunta 4 - Figura 4</p>
-                                <h3>Média de downloads por faixa de nota</h3>
-                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
-
-                                <div class="container-grafico">
-
-                                </div>
-
-                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
-                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                    </svg>
-                                    Ver como tabela
-                                </button>
-
-                                <div class="collapse" id="tabela1">
-                                    <div class="container-tabela">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
-                            <div class="div p-4">
-                                <h3>O que mostra</h3>
-                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
-                                    para Boa: +14 mi.</p>
-                            </div>
-
-                            <div class="div p-4">
-                                <h3>Cuidado</h3>
-                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
-                                    causa o aumento.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
 
 
         </section>
-
-
 
 
         <section class="container mt-5">
@@ -463,8 +474,8 @@
                 <div class="col-12 col-md-3">
                     <div class="div p-4 h-100">
                         <h2 class="destaque mb-1">R$ 287 bi</h2>
-                        <h3 class="mb-2">visitas a sites piratas em 2024</h3>
-                        <p>DataProt.</p>
+                        <h3 class="mb-2">perdas no Brasil em 2020.</h3>
+                        <p>Texto-base do relatório.</p>
                     </div>
                 </div>
 
@@ -663,6 +674,14 @@
         </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="JS/script.js"></script>
+
 </body>
 
 </html>
