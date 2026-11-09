@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+a.active{
+    font-weight: bold;
+}
+
 p{
     font-size: 17px;
 }
@@ -50,19 +54,19 @@ button{
     font-weight: bold;
 }
 
-button:hover{
+button:hover, button.active:hover{
     background-color: rgba(203, 201, 238, 0.7);
     border: solid 1px #09063D;
     color: #09063D;
 }
 
-.destaque-button{
+.destaque-button, button.active{
     background-color:#E6B04A;
     color: #09063D;
     border:none;
 }
 
-.destaque-button:hover{
+.destaque-button:hover, button.active:hover{
     border:none;
 }
 
@@ -110,6 +114,11 @@ nav ul{
     border: 1px solid #CBC9EE;
 }
 
+.container-banner img{
+    width: 100%;
+    height: 100%;
+}
+
 /*-------------------------------------------------------------------------- CONTEXTUALIZAÇÂO ---------------------------------------------------------*/
 
 .variavel{
@@ -129,67 +138,11 @@ nav ul{
     height: 25px;
     flex-shrink: 0;
 }
-/* ------------------------------------------------------------------------------ STORYTELLING ------------------------------------------------------- */
 
-#storytelling {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-#storytelling .div {
-    height: 100%;
-    padding: 25px;
-}
-
-#storytelling h3 {
-    margin-top: 20px;
-}
-
-#storytelling p {
-    line-height: 1.6;
-}
+/*-------------------------------------------------------------------------- MÉTRICAS ------------------------------------------------------------------*/
 
 
-/* ------------------------------------------------------------------------------- SEGURANÇA DA INFORMAÇÃO ------------------------------------------ */
 
-seguranca {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-seguranca .div {
-    height: 100%;
-    padding: 25px;
-}
-
-seguranca h3 {
-    margin-bottom: 15px;
-}
-
-seguranca p {
-    line-height: 1.6;
-}
-
-
-/* -----------------------------------------------------------------------------------CONTEXTO SOCIOECONÔMICO ----------------------------------------- */
-
-contexto socioeconomico {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-contexto socioeconomico .div {
-    height: 100%;
-    padding: 25px;
-}
-
-contexto socioeconomico h3 {
-    margin-bottom: 15px;
-}
-
-contexto socioeconomico p {
-    line-height: 1.6;
-}
 /*-------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------*/
 
 footer{

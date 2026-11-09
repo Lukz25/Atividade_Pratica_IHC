@@ -106,7 +106,7 @@
 
             <div class="row d-flex align-items-strech">
 
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-7 mt-3">
                     <div class="div p-4 h-100">
                         <h3>Variáveis Usadas</h3>
                         <p>Cada registro descreve um arquivo de vídeo compartilhado. Estas foram as colunas que
@@ -122,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 mt-3">
                     <div class="div p-4 h-100">
                         <h3 class="mb-3">Como os dados foram tratados</h3>
                         <div class="d-flex flex-column justify-content-around align-items-start">
@@ -153,7 +153,8 @@
             </div>
 
             <div class="row flex-wrap mt-4">
-                <div class="col-12 col-md-4">
+
+                <div class="col-12 col-md-4 mt-3">
                     <div class="div p-4 h-100">
                         <h2 class="destaque">1.562.572</h2>
                         <h3>registros originais</h3>
@@ -162,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-3">
                     <div class="div p-4 h-100">
                         <h2 class="destaque">100</h2>
                         <h3>filmes na amostra tratada</h3>
@@ -170,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-3">
                     <div class="div p-4 h-100">
                         <h2 class="destaque">2018–2024</h2>
                         <h3>período de observação</h3>
@@ -181,204 +182,448 @@
             </div>
         </section>
 
-        <section class="container-metricas"></section>
-
-        
-<section class="container-socedade container mt-5">
-
-    <div class="mb-4">
-        <p class="intro">CONTEXTO SOCIOECONÔMICO</p>
-        <h2 class="fs-4">Por que a pirataria acontece e quanto custa</h2>
-        <p>
-            O relatório traz estimativas de contexto. Elas não vêm da amostra de 100 filmes,
-            por isso aparecem como números citados e não como gráficos.
-        </p>
-    </div>
-
-    <div class="row g-3">
-
-        <div class="col-12 col-md-6">
-            <div class="div p-3 h-100">
-                <h2 class="destaque fs-3 mb-1">US$ 29,2 a 71 bi</h2>
-                <h3 class="fs-6 mb-2">
-                    perdas anuais da economia dos EUA com pirataria digital de vídeo
-                </h3>
-                <p>Estimativa da U.S. Chamber of Commerce.</p>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="div p-3 h-100">
-                <h2 class="destaque fs-3 mb-1">216 bi</h2>
-                <h3 class="fs-6 mb-2">visitas a sites piratas em 2024</h3>
-                <p>DataProt.</p>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="div p-3 h-100">
-                <h2 class="destaque fs-3 mb-1">R$ 287 bi</h2>
-                <h3 class="fs-6 mb-2">visitas a sites piratas em 2024</h3>
-                <p>DataProt.</p>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="div p-3 h-100">
-                <h3>Barreiras e preços</h3>
+        <section class="container mt-5">
+            <div>
+                <p class="intro">MÉTRICAS</p>
+                <h2>Quatro perguntas, quatro gráficos</h2>
                 <p>
-                    Renda restrita e preços altos dos serviços legais podem favorecer
-                    o consumo informal. O Brasil aparece como o quinto maior consumidor
-                    de pirataria do mundo.
+                    Navegue pelo carroussel para ver cada resultado do relatório. Passe o mouse ou toque nas marcas para
+                    ver os valores.
                 </p>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6">
-            <div class="div p-3 h-100">
-                <h3>Infraestrutura e acesso</h3>
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap w-100 carousel slide"
+                id="carroussel" data-bs-ride="carousel">
+
+                <div class="d-flex gap-3 align-items-center overflow-auto text-nowrap w-75">
+                    <button class="active" data-bs-target="#carroussel" data-bs-slide-to="0">Notas x
+                        Downloads</button>
+                    <button data-bs-target="#carroussel" data-bs-slide-to="1">Gêneros</button>
+                    <button data-bs-target="#carroussel" data-bs-slide-to="2">Vazamentos</button>
+                    <button data-bs-target="#carroussel" data-bs-slide-to="3">Sazonalidade</button>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 w-25">
+                    <button type="button" data-bs-target="#carroussel" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+                    </button>
+
+                    <button class="btn-seta" type="button" data-bs-target="#carroussel" data-bs-slide="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-4 allign-items-start">
+
+                        <div class="col-12 col-lg-8">
+                            <div class="div p-4">
+                                <p class="intro">Pergunta 1 - Figura 1</p>
+                                <h3>Média de downloads por faixa de nota</h3>
+                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
+
+                                <div class="container-grafico">
+
+                                </div>
+
+                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
+                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                    </svg>
+                                    Ver como tabela
+                                </button>
+
+                                <div class="collapse" id="tabela1">
+                                    <div class="container-tabela">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                            <div class="div p-4">
+                                <h3>O que mostra</h3>
+                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
+                                    para Boa: +14 mi.</p>
+                            </div>
+
+                            <div class="div p-4">
+                                <h3>Cuidado</h3>
+                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
+                                    causa o aumento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                   <div class="row g-4 allign-items-start">
+
+                        <div class="col-12 col-lg-8">
+                            <div class="div p-4">
+                                <p class="intro">Pergunta 2 - Figura 2</p>
+                                <h3>Média de downloads por faixa de nota</h3>
+                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
+
+                                <div class="container-grafico">
+
+                                </div>
+
+                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
+                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                    </svg>
+                                    Ver como tabela
+                                </button>
+
+                                <div class="collapse" id="tabela1">
+                                    <div class="container-tabela">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                            <div class="div p-4">
+                                <h3>O que mostra</h3>
+                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
+                                    para Boa: +14 mi.</p>
+                            </div>
+
+                            <div class="div p-4">
+                                <h3>Cuidado</h3>
+                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
+                                    causa o aumento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4 allign-items-start">
+
+                        <div class="col-12 col-lg-8">
+                            <div class="div p-4">
+                                <p class="intro">Pergunta 3 - Figura 3</p>
+                                <h3>Média de downloads por faixa de nota</h3>
+                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
+
+                                <div class="container-grafico">
+
+                                </div>
+
+                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
+                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                    </svg>
+                                    Ver como tabela
+                                </button>
+
+                                <div class="collapse" id="tabela1">
+                                    <div class="container-tabela">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                            <div class="div p-4">
+                                <h3>O que mostra</h3>
+                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
+                                    para Boa: +14 mi.</p>
+                            </div>
+
+                            <div class="div p-4">
+                                <h3>Cuidado</h3>
+                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
+                                    causa o aumento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4 allign-items-start">
+
+                        <div class="col-12 col-lg-8">
+                            <div class="div p-4">
+                                <p class="intro">Pergunta 4 - Figura 4</p>
+                                <h3>Média de downloads por faixa de nota</h3>
+                                <p>Milhões de downloads - 100 filmes - notas IMDb</p>
+
+                                <div class="container-grafico">
+
+                                </div>
+
+                                <button class="w-100 d-flex allign-items-center gap-2 mb-2" data-bs-toggle="collapse"
+                                    data-bs-target="#tabela1" aria-expanded="false" aria-controls="#tabela1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                    </svg>
+                                    Ver como tabela
+                                </button>
+
+                                <div class="collapse" id="tabela1">
+                                    <div class="container-tabela">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+                            <div class="div p-4">
+                                <h3>O que mostra</h3>
+                                <p>A média de 22,9 mi (Baixa) para 68,5 mi (Excelente). O maior salto vai de Regular
+                                    para Boa: +14 mi.</p>
+                            </div>
+
+                            <div class="div p-4">
+                                <h3>Cuidado</h3>
+                                <p>Há associação positiva entre nota e downloads, mas o gráfico nçao prova que a nota
+                                    causa o aumento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+        <section class="container mt-5">
+
+            <div class="mb-4">
+                <p class="intro">CONTEXTO SOCIOECONÔMICO</p>
+                <h2>Por que a pirataria acontece e quanto custa</h2>
                 <p>
-                    Falta de salas de cinema, meios de pagamento e oferta legal em
-                    certas regiões limita o acesso formal.
+                    O relatório traz estimativas de contexto. Elas não vêm da amostra de 100 filmes,
+                    por isso aparecem como números citados e não como gráficos.
                 </p>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6">
-            <div class="div p-3 h-100">
-                <h3>Impactos negativos</h3>
+            <div class="row g-3">
+
+                <div class="col-12 col-md-6">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque fs-3 mb-1">US$ 29,2 a 71 bi</h2>
+                        <h3 class="fs-6 mb-2">
+                            perdas anuais da economia dos EUA com pirataria digital de vídeo
+                        </h3>
+                        <p>Estimativa da U.S. Chamber of Commerce.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque mb-1">216 bi</h2>
+                        <h3 class="mb-2">visitas a sites piratas em 2024</h3>
+                        <p>DataProt.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="div p-4 h-100">
+                        <h2 class="destaque mb-1">R$ 287 bi</h2>
+                        <h3 class="mb-2">visitas a sites piratas em 2024</h3>
+                        <p>DataProt.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="div p-4 h-100">
+                        <h3>Barreiras e preços</h3>
+                        <p>
+                            Renda restrita e preços altos dos serviços legais podem favorecer
+                            o consumo informal. O Brasil aparece como o quinto maior consumidor
+                            de pirataria do mundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="div p-4 h-100">
+                        <h3>Infraestrutura e acesso</h3>
+                        <p>
+                            Falta de salas de cinema, meios de pagamento e oferta legal em
+                            certas regiões limita o acesso formal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="div p-4 h-100">
+                        <h3>Impactos negativos</h3>
+                        <p>
+                            Sonegação de tributos, concorrência desleal e redução de postos
+                            de trabalho.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="div p-4 h-100">
+                        <h3>Visibilidade</h3>
+                        <p>
+                            A circulação informal pode ampliar o alcance de obras de
+                            distribuição limitada, sem eliminar as perdas econômicas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="container-narrativa container mt-5">
+
+            <div class="mb-4">
+                <p class="intro">STORYTELLING</p>
+                <h2>A história em quatro passos</h2>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="div p-4 h-100">
+                        <p class="intro destaque">1 · Interesse</p>
+                        <h3>Nota alta atrai mais downloads</h3>
+                        <p>
+                            A média cresce junto com a avaliação do público.
+                        </p>
+                        <h4 class="destaque mb-0">22,9 → 68,5 mi</h4>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="div p-4 h-100">
+                        <p class="intro destaque">2 · Gênero</p>
+                        <h3>Apelo visual lidera</h3>
+                        <p>
+                            Ação e Ficção Científica, compatíveis com a demanda por alta definição.
+                        </p>
+                        <h4 class="destaque mb-0">36,6 · 34,8 mi</h4>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="div p-4 h-100">
+                        <p class="intro destaque">3 · Calendário</p>
+                        <h3>Mais de um pico no ano</h3>
+                        <p>
+                            Maio a julho e novembro a dezembro, com retração de agosto a outubro.
+                        </p>
+                        <h4 class="destaque mb-0">2 picos</h4>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="div p-4 h-100">
+                        <p class="intro destaque">4 · Vazamento</p>
+                        <h3>Janela curta, queda rápida</h3>
+                        <p>
+                            Em até 15 dias, a receita cai a 35% na 2ª semana (simulação).
+                        </p>
+                        <h4 class="destaque mb-0">35% · 65% · 78%</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="destaque-button rounded-pill text-center p-2 mt-3 fw-bold">
+                <small>
+                    Os resultados mostram associação, não causalidade. A amostra tem 100 filmes
+                    e a Figura 3 é uma simulação comparativa.
+                </small>
+            </div>
+
+        </section>
+
+
+
+        <section class="container-seguranca container mt-5 mb-5">
+
+            <div class="mb-4">
+                <p class="intro">SEGURANÇA DA INFORMAÇÃO</p>
+                <h2>Como os dados foram protegidos</h2>
                 <p>
-                    Sonegação de tributos, concorrência desleal e redução de postos
-                    de trabalho.
+                    O tratamento seguiu a LGPD (Lei nº 13.709/2018) e as diretrizes
+                    de integridade acadêmica.
                 </p>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6">
-            <div class="div p-3 h-100">
-                <h3>Visibilidade</h3>
-                <p>
-                    A circulação informal pode ampliar o alcance de obras de
-                    distribuição limitada, sem eliminar as perdas econômicas.
-                </p>
+            <div class="row g-3">
+
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h3>Minimização de dados</h3>
+                        <p>
+                            Só metadados técnicos, públicos e agregados. Nenhum IP,
+                            porta de conexão ou dado pessoal de usuários das redes P2P.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h3>Sem vetores de infração</h3>
+                        <p>
+                            Magnet links e hashes de torrents foram excluídos da base
+                            e deste site, para que ele não sirva de acesso a conteúdo protegido.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="div p-4 h-100">
+                        <h3>Finalidade legítima</h3>
+                        <p>
+                            Processamento para pesquisa, com acesso controlado e uso
+                            da licença CC BY 4.0.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-    </div>
-</section>
-
-        
-<section class="container-narrativa container mt-5">
-
-    <div class="mb-4">
-        <p class="intro">STORYTELLING</p>
-        <h2 class="fs-4">A história em quatro passos</h2>
-    </div>
-
-    <div class="row g-3">
-
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="div p-3 h-100">
-                <p class="intro destaque">1 · Interesse</p>
-                <h3>Nota alta atrai mais downloads</h3>
-                <p>
-                    A média cresce junto com a avaliação do público.
-                </p>
-                <h2 class="destaque fs-4 mb-0">22,9 → 68,5 mi</h2>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="div p-3 h-100">
-                <p class="intro destaque">2 · Gênero</p>
-                <h3>Apelo visual lidera</h3>
-                <p>
-                    Ação e Ficção Científica, compatíveis com a demanda por alta definição.
-                </p>
-                <h2 class="destaque fs-4 mb-0">36,6 · 34,8 mi</h2>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="div p-3 h-100">
-                <p class="intro destaque">3 · Calendário</p>
-                <h3>Mais de um pico no ano</h3>
-                <p>
-                    Maio a julho e novembro a dezembro, com retração de agosto a outubro.
-                </p>
-                <h2 class="destaque fs-4 mb-0">2 picos</h2>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="div p-3 h-100">
-                <p class="intro destaque">4 · Vazamento</p>
-                <h3>Janela curta, queda rápida</h3>
-                <p>
-                    Em até 15 dias, a receita cai a 35% na 2ª semana (simulação).
-                </p>
-                <h2 class="destaque fs-4 mb-0">35% · 65% · 78%</h2>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="destaque-button rounded-pill text-center p-2 mt-3 fw-bold">
-        <small>
-            Os resultados mostram associação, não causalidade. A amostra tem 100 filmes
-            e a Figura 3 é uma simulação comparativa.
-        </small>
-    </div>
-
-</section>
-
-
-        
-<section class="container-seguranca container mt-5 mb-5">
-
-    <div class="mb-4">
-        <p class="intro">SEGURANÇA DA INFORMAÇÃO</p>
-        <h2 class="fs-4">Como os dados foram protegidos</h2>
-        <p>
-            O tratamento seguiu a LGPD (Lei nº 13.709/2018) e as diretrizes
-            de integridade acadêmica.
-        </p>
-    </div>
-
-    <div class="row g-3">
-
-        <div class="col-12 col-md-4">
-            <div class="div p-3 h-100">
-                <h3>Minimização de dados</h3>
-                <p>
-                    Só metadados técnicos, públicos e agregados. Nenhum IP,
-                    porta de conexão ou dado pessoal de usuários das redes P2P.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-            <div class="div p-3 h-100">
-                <h3>Sem vetores de infração</h3>
-                <p>
-                    Magnet links e hashes de torrents foram excluídos da base
-                    e deste site, para que ele não sirva de acesso a conteúdo protegido.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-            <div class="div p-3 h-100">
-                <h3>Finalidade legítima</h3>
-                <p>
-                    Processamento para pesquisa, com acesso controlado e uso
-                    da licença CC BY 4.0.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
+        </section>
 
     </main>
 
