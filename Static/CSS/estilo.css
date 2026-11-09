@@ -15,10 +15,6 @@ a{
     text-decoration: none;
 }
 
-a.active{
-    font-weight: bold;
-}
-
 p{
     font-size: 17px;
 }

@@ -19,7 +19,7 @@
 </head>
 
 <body class="container-fluid">
-    <header class=" container-fluid navbar navbar-expand-lg navbar-dark sticky-top">
+    <header class=" container-fluid navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <h2 class="navbar-brand">Pirataria no Cinema</h2>
 
@@ -30,22 +30,22 @@
 
             <nav class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ms-auto">
-                    <a href="#" class="nav-link active">
+                    <a href="#contexto" class="nav-link active">
                         <li>Contexto</li>
                     </a>
-                    <a href="#" class="nav-link">
+                    <a href="#dados" class="nav-link">
                         <li>Dados Gerais</li>
                     </a>
-                    <a href="#" class="nav-link">
+                    <a href="#metrica" class="nav-link">
                         <li>Métricas</li>
                     </a>
-                    <a href="#" class="nav-link">
+                    <a href="#socio" class="nav-link">
                         <li>Sociedade</li>
                     </a>
-                    <a href="#" class="nav-link">
+                    <a href="#narrativa" class="nav-link">
                         <li>Narrativa</li>
                     </a>
-                    <a href="#" class="nav-link">
+                    <a href="#seguranca" class="nav-link">
                         <li>Segurança</li>
                     </a>
                 </ul>
@@ -71,8 +71,15 @@
 
 
                     <div class="d-flex justify-content-between align-items-center w-100 mt-4 gap-3">
-                        <button class="destaque-button flex-fill">Ver Métricas</button>
-                        <button class="btn-secundario flex-fill">Entender o dataset</button>
+
+                        <a href="#metrica" class="w-50 text-decoration-none">
+                            <button class="destaque-button w-100 py-3">Ver Métricas</button>
+                        </a>
+
+                        <a href="#contexto" class="w-50 text-decoration-none">
+                            <button class="w-100 py-3">Entender o dataset</button>
+                        </a>
+
                     </div>
 
 
@@ -87,7 +94,7 @@
 
 
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="contexto">
             <div>
                 <p class="intro">CONTEXTUALIZAÇÃO</p>
                 <h2>O dataset: MagnetDB</h2>
@@ -142,7 +149,7 @@
             </div>
         </section>
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="dados">
             <div>
                 <p class="intro">DADOS GERAIS</p>
                 <h2>O tamanho da base em três números</h2>
@@ -178,7 +185,7 @@
             </div>
         </section>
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="metrica">
             <div>
                 <p class="intro">MÉTRICAS</p>
                 <h2>Quatro perguntas, quatro gráficos</h2>
@@ -440,7 +447,7 @@
         </section>
 
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="socio">
 
             <div class="mb-4">
                 <p class="intro">CONTEXTO SOCIOECONÔMICO</p>
@@ -524,7 +531,7 @@
         </section>
 
 
-        <section class="container-narrativa container mt-5">
+        <section class="container-narrativa container mt-5" id="narrativa">
 
             <div class="mb-4">
                 <p class="intro">STORYTELLING</p>
@@ -590,7 +597,7 @@
 
 
 
-        <section class="container-seguranca container mt-5 mb-5">
+        <section class="container-seguranca container mt-5 mb-5" id="seguranca">
 
             <div class="mb-4">
                 <p class="intro">SEGURANÇA DA INFORMAÇÃO</p>
