@@ -172,3 +172,13 @@ footer section{
 footer p{
     font-size: 14px;
 }
+
+.sectionEquipe {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionFontes {
+    display: flex;
+    justify-content: end;
+}
