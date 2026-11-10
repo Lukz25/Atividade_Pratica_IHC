@@ -96,8 +96,8 @@ nav ul{
 /*-------------------------------------------------------------------------- BANNER ------------------------------------------------------------------*/
 
 .container-banner{
-    background: #2A7B9B;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 26%, rgba(21, 73, 205, 1) 49%, rgba(41, 35, 156, 1) 69%, rgba(18, 14, 82, 1) 88%);
+    background: #0C1468;
+    background: linear-gradient(90deg, #0A0E55 0%, #0C1A72 45%, #120E5E 75%, #0B0746 100%);
     border-radius: 22px;
 }
 

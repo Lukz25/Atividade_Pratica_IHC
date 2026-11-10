@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-label="Tira de filme com três quadros: gráfico de barras, curva de queda e o número 100 filmes">
+  <defs>
+    <mask id="vazado">
+      <rect width="520" height="360" fill="#fff"/>
+      <rect x="36" y="108" width="140" height="148" rx="12" fill="#000"/>
+      <rect x="190" y="108" width="140" height="148" rx="12" fill="#000"/>
+    </mask>
+  </defs>
+  <g transform="rotate(-7 260 180)">
+    <!-- tira do filme, com os quadros 1 e 2 vazados -->
+    <rect x="20" y="70" width="480" height="220" rx="22" fill="#0f0b4a" mask="url(#vazado)"/>
+    <!-- furos da película -->
+    <g fill="#1b1766">
+      <rect x="40" y="82" width="22" height="14" rx="4"/><rect x="82" y="82" width="22" height="14" rx="4"/><rect x="124" y="82" width="22" height="14" rx="4"/><rect x="166" y="82" width="22" height="14" rx="4"/><rect x="208" y="82" width="22" height="14" rx="4"/><rect x="250" y="82" width="22" height="14" rx="4"/><rect x="292" y="82" width="22" height="14" rx="4"/><rect x="334" y="82" width="22" height="14" rx="4"/><rect x="376" y="82" width="22" height="14" rx="4"/><rect x="418" y="82" width="22" height="14" rx="4"/><rect x="460" y="82" width="22" height="14" rx="4"/>
+      <rect x="40" y="264" width="22" height="14" rx="4"/><rect x="82" y="264" width="22" height="14" rx="4"/><rect x="124" y="264" width="22" height="14" rx="4"/><rect x="166" y="264" width="22" height="14" rx="4"/><rect x="208" y="264" width="22" height="14" rx="4"/><rect x="250" y="264" width="22" height="14" rx="4"/><rect x="292" y="264" width="22" height="14" rx="4"/><rect x="334" y="264" width="22" height="14" rx="4"/><rect x="376" y="264" width="22" height="14" rx="4"/><rect x="418" y="264" width="22" height="14" rx="4"/><rect x="460" y="264" width="22" height="14" rx="4"/>
+    </g>
+    <!-- quadro 1: barras -->
+    <g fill="#d19526">
+      <rect x="58" y="206" width="20" height="36" rx="4"/>
+      <rect x="86" y="186" width="20" height="56" rx="4"/>
+      <rect x="114" y="160" width="20" height="82" rx="4"/>
+      <rect x="142" y="130" width="20" height="112" rx="4"/>
+    </g>
+    <!-- quadro 2: curva de queda -->
+    <path d="M206,134 C220,170 232,200 252,216 C272,232 296,238 318,240" fill="none" stroke="#e8e6f7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="206" cy="132" r="7" fill="#d19526"/>
+    <!-- quadro 3: 100 filmes -->
+    <rect x="344" y="108" width="140" height="148" rx="12" fill="#d19526"/>
+    <text x="414" y="198" text-anchor="middle" font-family="Montserrat, 'Arial Black', Arial, sans-serif" font-weight="800" font-size="50" fill="#1f1500">100</text>
+    <text x="414" y="226" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="15" fill="#1f1500">filmes</text>
+  </g>
+</svg>
